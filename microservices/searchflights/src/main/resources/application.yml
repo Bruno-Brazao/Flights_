@@ -1,0 +1,19 @@
+server:
+  port: 8081
+
+spring:
+  h2:
+    console:
+      enabled: true
+  datasource: 
+    url: jdbc:h2:mem:searchflights
+  jpa:
+    defer-datasource-initialization: true
+  application:
+    name: search
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+      
